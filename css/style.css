@@ -3,12 +3,29 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  display: flex;
+  justify-content: center;
+}
+@font-face {
+  font-family: 'SF';
+  font-weight: 400;
+
+  src: url('../font/SF/SF-Pro-Display-Regular.otf');
+}
+@font-face {
+  font-family: 'SF';
+  font-weight: 200;
+
+  src: url('../font/SF/SF-Pro-Display-Light.otf');
+}
 .calc {
-  width: 428px;
-  height: 926px;
+  max-width: 428px;
+  width: 100%;
+  height: auto;
   background-color: #000000;
   border-radius: 30px;
-  margin: 0 auto;
+
   padding: 0 17px 74px;
 }
 .calc-screen {
@@ -17,6 +34,7 @@
   justify-content: end;
   align-items: end;
 }
+
 .tablo {
   color: #ffffff;
   font-size: 90px;
@@ -24,6 +42,8 @@
   background-color: transparent;
   border: none;
   text-align: right;
+  font-family: SF;
+  font-weight: 400;
 }
 .buttons {
   display: flex;
@@ -32,8 +52,11 @@
 }
 
 .btn {
+  max-width: 88px;
+  max-height: 88px;
   width: 88px;
   height: 88px;
+  width: 100%;
   border: none;
   background-color: #333333;
   border-radius: 100%;
@@ -41,13 +64,17 @@
   font-size: 40px;
   font-weight: 400;
   transition: all ease 0.3s;
+  font-family: SF;
 }
 .btn:hover {
   background-color: #b5af96;
 }
 .zero {
+  max-width: 190px;
   width: 190px;
   border-radius: 352px;
+  text-align: start;
+  padding-left: 30px;
 }
 .btn_gray {
   background-color: #a5a5a5;
