@@ -1,6 +1,5 @@
-function x(str) {
-  str = str.replaceAll('а', '#');
-  str = str.replaceAll('А', '#');
-  return str;
-}
-console.log(x('Раз Два Три Четыре'));
+let arr = ['privet', 'poka'];
+arr = arr.map((item) => {
+  return item.split('').reverse().join('');
+});
+console.log(arr);
